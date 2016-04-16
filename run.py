@@ -3,7 +3,7 @@
 
 import luigi
 
-import crawlers
+from crawlers.bills import get_list as get_bill_list
 import utils
 
 
@@ -18,4 +18,4 @@ class HourlyTasks(luigi.WrapperTask):
 class ScrapeBillList(luigi.Task):
 
     def run(self):
-        crawlers.get_list.pages()
+        get_bill_list.pages()

@@ -5,4 +5,4 @@ from datetime import datetime
 
 
 def now():
-    datetime.today()
+    return datetime.today()
